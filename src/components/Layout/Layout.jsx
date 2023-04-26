@@ -26,9 +26,9 @@ const Layout = () => {
         </ul>
       </header>
       <main>
-        {/* <Suspense>
+        <Suspense>
           <Outlet />
-        </Suspense> */}
+        </Suspense>
       </main>
     </>
   );
