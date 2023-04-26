@@ -1,0 +1,17 @@
+.navLink {
+  text-decoration: none;
+  color: black;
+  
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: rgb(247, 250, 253);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 9px 9px -6px,
+    rgb(0 0 0 / 14%) 0px 9px 12px 0px, rgb(0 0 0 / 12%) 0px 3px 24px 0px;
+}
