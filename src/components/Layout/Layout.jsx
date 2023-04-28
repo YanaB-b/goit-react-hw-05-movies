@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledNavLink = styled(NavLink)`
   &.active {
-    color: red;
+    color: yellow;
 `;
 
 const Layout = () => {
