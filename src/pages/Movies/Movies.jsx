@@ -16,7 +16,7 @@ const Movies = () => {
     }
     getSearchMovies(query)
       .then(data => {
-        setMovies(data);
+        setMovies(data.results);
         setStatus('resolved');
       })
       .catch(error => {
