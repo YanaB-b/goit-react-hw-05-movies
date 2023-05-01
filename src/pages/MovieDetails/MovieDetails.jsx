@@ -29,7 +29,8 @@ const MovieDetails = () => {
         <img
           src={
             movie.poster_path
-               `https://image.tmdb.org/t/p/w300/${movie.poster_path}`
+             `https://image.tmdb.org/t/p/w300/${movie.poster_path}`
+            
               
           }
           alt={movie.original_title}
