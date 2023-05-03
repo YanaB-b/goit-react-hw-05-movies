@@ -1,5 +1,5 @@
 .section {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(221, 239, 255);
     padding-top: 10px;
     padding-left: 25px;
@@ -9,4 +9,36 @@
     color: black;
     padding: 5px;
   }
-  
+  .btnBack{
+    border: none;
+  border-radius: 3px;
+  color: black;
+  width: 60px;
+  height: 35px;
+  border: solid 1px rgb(0, 112, 224);
+  margin-bottom: 10px;
+  padding: 4px;
+  transition: color 250ms linear;
+  text-decoration: none;
+  }
+  .btnBack:hover{
+    color:yellow;
+  }
+  .movieDetails{
+    display: flex;
+    gap: 20px;
+  }
+  .subTitle{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .subSection{
+    display: flex;
+    align-items: baseline;
+  }
+  .text{
+    font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  }

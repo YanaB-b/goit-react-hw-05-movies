@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, Suspense } from 'react';
 import { Link, useParams, useLocation, Outlet } from 'react-router-dom';
 import { getMovieDetails } from 'NewsApiService';
+import dafaultimages from './defaultimages.jpg'
 import css from './MovieDetails.module.css';
 
 const MovieDetails = () => {
@@ -21,17 +22,18 @@ const MovieDetails = () => {
 
   return (
     <div className={css.section}>
+     
       <Link className={css.btnBack} to={backLink.current}>
-        Go back
+      🢨To back
       </Link>
       <h1 className={css.title}>Movie Details</h1>
       <div className={css.movieDetails}>
         <img
-          src={
+           src={
             movie.poster_path
-             `https://image.tmdb.org/t/p/w300/${movie.poster_path}`
+              ? `https://image.tmdb.org/t/p/w300/${movie.poster_path}`
+              : dafaultimages
             
-              
           }
           alt={movie.original_title}
           width={300}
@@ -40,7 +42,7 @@ const MovieDetails = () => {
           <p className={css.subTitle}>
             Movie Title: <span className={css.text}>{movie.title}</span>{' '}
           </p>
-          <div>
+          <div className={css.subSection}>
             <p className={css.subTitle}>Release year:</p>
             {releaseDate && (
               <p className={css.text}>{releaseDate.split('-')[0]}</p>
