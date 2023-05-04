@@ -1,16 +1,15 @@
-.subTitle{
+.subTitle {
   font-size: 22px;
   font-weight: bold;
   padding: 10px;
 }
 
-.text{
+.text {
   font-size: 18px;
-font-weight: bold;
-padding: 10px;
-color: rgb(58, 58, 120);
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(58, 58, 120);
 }
 .reviewsList {
   list-style: none;
-
 }
