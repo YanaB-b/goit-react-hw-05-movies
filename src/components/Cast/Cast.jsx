@@ -15,10 +15,10 @@ const Cast = () => {
 
   return (
     <div>
-      <h2 className={css.subTitle}>Movie Cast</h2>
+      
       <ul className={css.castList}>
         {cast.map(actor => (
-          <li key={actor.id}>
+          <li className={css.castItem} key={actor.id}>
             <img
               src={
                 actor.profile_path
@@ -28,9 +28,10 @@ const Cast = () => {
               alt={actor.name}
               width="100"
             />
-
+  <div>
             <h3 className={css.subTitle}>{actor.name}</h3>
             <p className={css.text}>Character: {actor.character}</p>
+            </div>
           </li>
         ))}
       </ul>
