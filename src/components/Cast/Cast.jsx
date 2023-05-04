@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieCredits } from 'NewsApiService';
-import dafaultimages from './dafaultimages.jpg'
-
+import dafaultimages from './dafaultimages.jpg';
 import css from './Cast.module.css';
 const Cast = () => {
   const { movieId } = useParams();
@@ -17,7 +16,7 @@ const Cast = () => {
   return (
     <div>
       <h2 className={css.subTitle}>Movie Cast</h2>
-      <ul>
+      <ul className={css.castList}>
         {cast.map(actor => (
           <li key={actor.id}>
             <img

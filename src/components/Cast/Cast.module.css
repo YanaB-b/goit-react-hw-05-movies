@@ -2,10 +2,16 @@
   font-size: 22px;
   font-weight: bold;
   padding: 10px;
+ 
 }
 
 .text{
   font-size: 18px;
 font-weight: bold;
 padding: 10px;
+text-decoration: none;
+color: rgb(58, 58, 120);
+}
+.castList{
+  list-style: none;
 }

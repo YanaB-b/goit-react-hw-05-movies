@@ -49,8 +49,8 @@ export const getMovieCredits = movieId => {
       } else {
         throw new Error('Response was not ok.');
       }
-    });
-    
+    })
+    .then(data => data.cast);
 };
 
 export const getMovieReviews = movieId => {
@@ -63,6 +63,6 @@ export const getMovieReviews = movieId => {
       } else {
         throw new Error('Response was not ok.');
       }
-    });
-    
+    })
+    .then(data => data.results);
 };
