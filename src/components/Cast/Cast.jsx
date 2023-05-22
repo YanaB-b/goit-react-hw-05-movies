@@ -16,9 +16,13 @@ const Cast = () => {
   return (
     <div>
       
+      {cast.length === 0 ? (
+        <h2>There is no information about actors</h2>
+      ) : (
       <ul className={css.castList}>
-        {cast.map(actor => (
-          <li className={css.castItem} key={actor.id}>
+        {cast.map(actor => {
+          return (
+<li className={css.castItem} key={actor.id}>
             <img
               src={
                 actor.profile_path
@@ -33,8 +37,11 @@ const Cast = () => {
             <p className={css.text}>Character: {actor.character}</p>
             </div>
           </li>
-        ))}
-      </ul>
+          )
+          
+})}
+      </ul>)}
+      
     </div>
   );
 };
